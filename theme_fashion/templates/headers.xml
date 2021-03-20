@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<harpiya>
+    <template id="header_style_1" inherit_id="portal.frontend_layout"
+              name="Üstbilgi stili 1" active="True">
+        <xpath expr="//header" position="before">
+            <header class="version_2">
+                <div class="layer"></div><!-- Mobile menu overlay mask -->
+                <div class="main_header">
+                    <div class="container">
+                        <div class="row small-gutters">
+                            <div class="col-xl-3 col-lg-3 d-lg-flex align-items-center">
+                                <div id="logo">
+                                    <a href="/" class="navbar-brand logo">
+                                        <img t-att-src="'/logo.png?company=%s' % res_company.id"
+                                             t-att-alt="'Logo of %s' % res_company.name"
+                                             t-att-title="res_company.name"/>
+                                    </a>
+                                </div>
+                            </div>
+                            <nav class="col-xl-6 col-lg-7">
+                                <a class="open_close" href="javascript:void(0);">
+                                    <div class="hamburger hamburger--spin">
+                                        <div class="hamburger-box">
+                                            <div class="hamburger-inner"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- Mobile menu button -->
+                                <div class="main-menu">
+                                    <div id="header_menu">
+                                        <a href="/">
+                                            <img src="/theme_fashion/static/src/img/logo_black.svg" alt="" width="100"
+                                                 height="35"/>
+                                        </a>
+                                        <a href="#" class="open_close" id="close_in">
+                                            <i class="ti-close"></i>
+                                        </a>
+                                    </div>
+                                    <ul>
+                                        <t t-call="theme_fashion.header_menu"></t>
+                                    </ul>
+                                </div>
+                                <!--/main-menu -->
+                            </nav>
+                            <div class="col-xl-3 col-lg-2 d-lg-flex align-items-center justify-content-end text-right">
+                                <a class="phone_top" t-att-href="'tel: %s' %res_company.phone">
+                                    <strong>
+                                        <span>Yardıma mı ihtiyacınız var?</span>
+                                        <p t-field="res_company.phone"/>
+                                    </strong>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- /row -->
+                    </div>
+                </div>
+                <!-- /main_header -->
+
+                <div class="main_nav Sticky">
+                    <div class="container">
+                        <div class="row small-gutters">
+                            <div class="col-xl-3 col-lg-3 col-md-3">
+                                <nav class="categories">
+                                    <ul class="clearfix">
+                                        <li>
+                                            <span>
+                                                <a href="#">
+                                                    <span class="hamburger hamburger--spin">
+                                                        <span class="hamburger-box">
+                                                            <span class="hamburger-inner"></span>
+                                                        </span>
+                                                    </span>
+                                                    Categories
+                                                </a>
+                                            </span>
+                                            <div id="menu">
+                                                <ul>
+                                                    <li>
+                                                        <span>
+                                                            <a href="#">Collections</a>
+                                                        </span>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="listing-grid-1-full.html">Trending</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="listing-grid-2-full.html">Life style</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="listing-grid-3.html">Running</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="listing-grid-4-sidebar-left.html">Training</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="listing-grid-5-sidebar-right.html">View all
+                                                                    Collections
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            <a href="#">Men</a>
+                                                        </span>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="listing-grid-6-sidebar-left.html">Offers</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="listing-grid-7-sidebar-right.html">Shoes</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="listing-row-1-sidebar-left.html">Clothing</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="listing-row-3-sidebar-left.html">Accessories
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="listing-row-4-sidebar-extended.html">
+                                                                    Equipment
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            <a href="#">Women</a>
+                                                        </span>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="listing-grid-1-full.html">Best Sellers</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="listing-grid-2-full.html">Clothing</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="listing-grid-3.html">Accessories</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="listing-grid-4-sidebar-left.html">Shoes</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            <a href="#">Boys</a>
+                                                        </span>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="listing-grid-6-sidebar-left.html">Easy On
+                                                                    Shoes
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="listing-grid-7-sidebar-right.html">Clothing</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="listing-row-3-sidebar-left.html">Must Have</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="listing-row-4-sidebar-extended.html">All Boys
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            <a href="#">Girls</a>
+                                                        </span>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="listing-grid-1-full.html">New Releases</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="listing-grid-2-full.html">Clothing</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="listing-grid-3.html">Sale</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="listing-grid-4-sidebar-left.html">Best
+                                                                    Sellers
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <span>
+                                                            <a href="#">Customize</a>
+                                                        </span>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="listing-row-1-sidebar-left.html">For Men</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="listing-row-2-sidebar-right.html">For Women</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="listing-row-4-sidebar-extended.html">For Boys
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="listing-grid-1-full.html">For Girls</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-xl-6 col-lg-7 col-md-6 d-none d-md-block">
+                                <div class="custom-search-input">
+                                    <input type="text" placeholder="Search over 10.000 products"/>
+                                    <button type="submit">
+                                        <i class="header-icon_search_custom"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-2 col-md-3">
+                                <ul class="top_tools">
+                                    <li>
+                                        <div class="dropdown dropdown-cart">
+                                            <a href="cart.html" class="cart_bt">
+                                                <strong>2</strong>
+                                            </a>
+                                            <div class="dropdown-menu">
+                                                <ul>
+                                                    <li>
+                                                        <a href="product-detail-1.html">
+                                                            <figure>
+                                                                <img src="/theme_fashion/static/src/img/products/product_placeholder_square_small.jpg"
+                                                                     data-src="/theme_fashion/static/src/img/products/shoes/thumb/1.jpg"
+                                                                     alt=""
+                                                                     width="50" height="50" class="lazy"/>
+                                                            </figure>
+                                                            <strong><span>1x Armor Air x Fear</span>$90.00
+                                                            </strong>
+                                                        </a>
+                                                        <a href="#" class="action">
+                                                            <i class="ti-trash"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="product-detail-1.html">
+                                                            <figure>
+                                                                <img src="/theme_fashion/static/src/img/products/product_placeholder_square_small.jpg"
+                                                                     data-src="img/products/shoes/thumb/2.jpg" alt=""
+                                                                     width="50" height="50" class="lazy"/>
+                                                            </figure>
+                                                            <strong><span>1x Armor Okwahn II</span>$110.00
+                                                            </strong>
+                                                        </a>
+                                                        <a href="0" class="action">
+                                                            <i class="ti-trash"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <div class="total_drop">
+                                                    <div class="clearfix">
+                                                        <strong>Total</strong>
+                                                        <span>$200.00</span>
+                                                    </div>
+                                                    <a href="cart.html" class="btn_1 outline">View Cart</a>
+                                                    <a href="checkout.html" class="btn_1">Checkout</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /dropdown-cart-->
+                                    </li>
+                                    <li>
+                                        <a href="#0" class="wishlist">
+                                            <span>Wishlist</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown dropdown-access" t-ignore="true"
+                                             t-if="not user_id._is_public()">
+                                            <a href="/my/home" class="access_link">
+                                                <span>Hesabım</span>
+                                            </a>
+                                            <div class="dropdown-menu">
+                                                <span class="te_user_drop_item">Merhaba,
+                                                    <span class="te_user_drop_item"
+                                                          t-esc="user_id.name[:15] + '...' if user_id.name and len(user_id.name) &gt; 16 else user_id.name"/>
+                                                </span>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="ti-truck"></i>
+                                                            Sipariş Takibi
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/my/orders">
+                                                            <i class="ti-package"></i>
+                                                            Siparişlerim
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/my/account">
+                                                            <i class="ti-user"></i>
+                                                            Profilim
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="ti-help-alt"></i>Yardım
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown dropdown-access" groups="base.group_public">
+                                            <a href="/my/home" class="access_link">
+                                                <span>Hesabım</span>
+                                            </a>
+                                            <div class="dropdown-menu">
+                                                <a href="/web/login" class="btn_1">Giriş Yap veya Kayıt Ol</a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="ti-truck"></i>
+                                                            Sipariş Takibi
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="ti-help-alt"></i>Yardım
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- /dropdown-access-->
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="btn_search_mob">
+                                            <span>Search</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#menu" class="btn_cat_mob">
+                                            <div class="hamburger hamburger--spin" id="hamburger">
+                                                <div class="hamburger-box">
+                                                    <div class="hamburger-inner"></div>
+                                                </div>
+                                            </div>
+                                            Categories
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /row -->
+                    </div>
+                    <div class="search_mob_wp">
+                        <input type="text" class="form-control" placeholder="Search over 10.000 products"/>
+                        <input type="submit" class="btn_1 full-width" value="Search"/>
+                    </div>
+                    <!-- /search_mobile -->
+                </div>
+                <!-- /main_nav -->
+            </header>
+        </xpath>
+        <xpath expr="//nav[@class='navbar navbar-expand-md navbar-light bg-light']" position="replace">
+            <!-- Write here your custom code -->
+        </xpath>
+    </template>
+
+
+    <!-- Header Menu -->
+    <template id="header_menu" name="Herader Menu">
+        <t t-foreach="website.menu_id.child_id" t-as="submenu">
+            <t t-set="has_visible_submenu"
+               t-value="(submenu.is_mega_menu and submenu.is_visible) or submenu.child_id.filtered(lambda menu: menu.is_visible)"/>
+            <li t-if="submenu.is_visible and not has_visible_submenu"
+                t-attf-class="#{item_class or ''}">
+                <a t-att-href="submenu.clean_url()"
+                   t-attf-class="#{link_class or ''} #{'active' if submenu.clean_url() and unslug_url(request.httprequest.path) == unslug_url(submenu.clean_url()) else ''}"
+                   t-ignore="true"
+                   t-att-target="'_blank' if submenu.new_window else None">
+                    <p t-field="submenu.name"/>
+                </a>
+            </li>
+            <li t-if="has_visible_submenu" t-attf-class="#{item_class or ''} submenu #{
+        (submenu.clean_url() and submenu.clean_url() != '/' and any([request.httprequest.path == child.url for child in submenu.child_id if child.url]) or
+         (submenu.clean_url() and request.httprequest.path == submenu.clean_url())) and 'active'
+        } #{submenu.is_mega_menu and 'position-static'}">
+                <a t-attf-class="#{link_class or ''} show-submenu #{submenu.is_mega_menu and 'show-submenu-mega'}"
+                   href="javascript:void(0);">
+                    <span t-field="submenu.name"/>
+                </a>
+                <div t-if="submenu.is_mega_menu"
+                     t-attf-class="menu-wrapper o_mega_menu #{submenu.mega_menu_classes}"
+                     data-name="Mega Menu"
+                     t-field="submenu.mega_menu_content"/>
+                <ul t-else="">
+                    <t t-foreach="submenu.child_id" t-as="submenu">
+                        <t t-call="website.submenu">
+                            <t t-set="item_class" t-value="None"/>
+                            <t t-set="link_class" t-value="'dropdown-item'"/>
+                        </t>
+                    </t>
+                </ul>
+            </li>
+        </t>
+    </template>
+
+    <!-- Language Selector Option	-->
+    <template id="header_language_ept" inherit_id="website.language_selector">
+        <xpath expr="//button[hasclass('dropdown-toggle')]" position="replace">
+            <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="true">
+                <span class="lang_btn_name"
+                      t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][2].split('/').pop()"/>
+                <span class="lang_btn_code" style="display:none"
+                      t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][1]"/>
+                <span class="caret ml4"/>
+            </button>
+            <div class="dropdown-menu" role="menu">
+                <t t-foreach="languages" t-as="lg">
+                    <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
+                       class="dropdown-item js_change_lang"
+                       t-att-data-url_code="lg[1]">
+                        <t t-esc="lg[2].split('/').pop()"/>
+                    </a>
+                </t>
+            </div>
+        </xpath>
+    </template>
+</harpiya>

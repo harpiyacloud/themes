@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_product_brand_ept_module_admin,product.brand.ept.module.admin,harpiya_theme_base.model_product_brand_ept,base.group_system,1,1,1,1
+access_slider_admin,access.slider.admin,harpiya_theme_base.model_slider,base.group_system,1,1,1,1
+access_slider_filter_admin,access.slider.filter.admin,harpiya_theme_base.model_slider_filter,base.group_system,1,1,1,1
+access_slider_styles_admin,access.slider.styles.admin,harpiya_theme_base.model_slider_styles,base.group_system,1,1,1,1
+access_product_label_admin,access.product.label.admin,harpiya_theme_base.model_product_label,base.group_system,1,1,1,1
+access_product_label_line_admin,access.product.label.line.admin,harpiya_theme_base.model_product_label_line,base.group_system,1,1,1,1
+access_product_tab_line_admin,access.product.tab.line.admin,harpiya_theme_base.model_product_tab_line,base.group_system,1,1,1,1

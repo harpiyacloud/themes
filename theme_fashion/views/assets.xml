@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<harpiya>
+    <template id="theme_assets_frontend" inherit_id="website.assets_frontend">
+        <xpath expr="link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_fashion/static/src/scss/_mixin.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashion/static/src/scss/_variables.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashion/static/src/scss/about.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashion/static/src/scss/blog.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashion/static/src/scss/account.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashion/static/src/scss/cart.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashion/static/src/scss/checkout.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashion/static/src/scss/contact.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashion/static/src/scss/error_track.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashion/static/src/scss/faq.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashion/static/src/scss/home_1.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashion/static/src/scss/leave_review.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashion/static/src/scss/listing.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashion/static/src/scss/product_page.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashion/static/src/scss/style.scss"/>
+        </xpath>
+        <xpath expr="script[last()]" position="after">
+            <script type="text/javascript" src="/theme_fashion/static/src/js/common_scripts.js"/>
+            <script type="text/javascript" src="/theme_fashion/static/src/js/main.js"/>
+        </xpath>
+    </template>
+</harpiya>

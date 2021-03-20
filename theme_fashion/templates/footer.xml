@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<harpiya>
+    <template id="footer_style_1" inherit_id="website.footer_custom">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <h3 data-target="#collapse_1">Kurumsal</h3>
+                        <div class="collapse dont-collapse-sm links" id="collapse_1">
+                            <ul>
+                                <li>
+                                    <a href="/aboutus">Hakkımızda</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sıkça Sorulan Sorular</a>
+                                </li>
+                                <li>
+                                    <a href="#">Yardım</a>
+                                </li>
+                                <li>
+                                    <a href="#">Hesabım</a>
+                                </li>
+                                <li>
+                                    <a href="#">Kapmanyalar</a>
+                                </li>
+                                <li>
+                                    <a href="/contactus">İletişim</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 data-target="#collapse_2">Kategoriler</h3>
+                        <div class="collapse dont-collapse-sm links" id="collapse_2">
+                            <ul>
+                                <li>
+                                    <a href="#">Elbiseler</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tunik</a>
+                                </li>
+                                <li>
+                                    <a href="#">Ceketler</a>
+                                </li>
+                                <li>
+                                    <a href="#">Ayakkabılar</a>
+                                </li>
+                                <li>
+                                    <a href="#">Gömlekler</a>
+                                </li>
+                                <li>
+                                    <a href="#">Saatler</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 data-target="#collapse_3">İletişim Bilgileri</h3>
+                        <div class="collapse dont-collapse-sm contacts" id="collapse_3">
+                            <ul>
+                                <li t-if="res_company.street or res_company.street2 or res_company.city or res_company.state_id or res_company.zip or res_company.country_id">
+                                    <i class="ti-home"></i>
+                                    <span t-field="res_company.street"/>
+                                    <span t-field="res_company.street2"/>
+                                    <span t-field="res_company.city"/>
+                                    <span t-field="res_company.state_id"/>
+                                    <span t-field="res_company.zip"/>
+                                    <span t-field="res_company.country_id"/>
+                                </li>
+                                <li t-if="res_company.phone">
+                                    <i class="ti-headphone-alt"></i>
+                                    <a t-att-href="'tel: %s' %res_company.phone">
+                                        <span t-field="res_company.phone"
+                                              class="te_ftr_text_style d-inline-block pl-sm-2"/>
+                                    </a>
+                                </li>
+                                <li t-if="res_company.email">
+                                    <i class="ti-email"></i>
+                                    <a t-att-href="'mailto: %s' %res_company.email">
+                                        <span t-field="res_company.email"
+                                              class="te_ftr_text_style d-inline-block pl-sm-2"/>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 data-target="#collapse_4">Haber Bülteni</h3>
+                        <div class="collapse dont-collapse-sm" id="collapse_4">
+                            <div id="newsletter">
+                                <div class="form-group js_subscribe" data-list-id="1" data-subscribe="off">
+                                    <input type="email" name="email" class="js_subscribe_email form-control"
+                                           placeholder="E-posta Adresiniz"/>
+                                    <button type="submit" id="submit-newsletter">
+                                        <i class="ti-angle-double-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="follow_us">
+                                <h5>Takip Edin</h5>
+                                <ul>
+                                    <li t-if="website.social_twitter">
+                                        <a t-if="website.social_twitter" t-att-href="website.social_twitter">
+                                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                                                 data-src="/theme_fashion/static/src/img/twitter_icon.svg" alt=""
+                                                 class="lazy"/>
+                                        </a>
+                                    </li>
+                                    <li t-if="website.social_facebook">
+                                        <a t-if="website.social_facebook" t-att-href="website.social_facebook">
+                                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                                                 data-src="/theme_fashion/static/src/img/facebook_icon.svg" alt=""
+                                                 class="lazy"/>
+                                        </a>
+                                    </li>
+                                    <li t-if="website.social_instagram">
+                                        <a t-if="website.social_instagram" t-att-href="website.social_instagram">
+                                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                                                 data-src="/theme_fashion/static/src/img/instagram_icon.svg" alt=""
+                                                 class="lazy"/>
+                                        </a>
+                                    </li>
+                                    <li t-if="website.social_youtube">
+                                        <a t-if="website.social_youtube" t-att-href="website.social_youtube">
+                                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                                                 data-src="/theme_fashion/static/src/img/youtube_icon.svg" alt=""
+                                                 class="lazy"/>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /row-->
+                <hr/>
+                <div class="row add_bottom_25">
+                    <div class="col-lg-4">
+                        <ul class="footer-selector clearfix">
+                            <li>
+                                <div class="styled-select lang-selector">
+                                    <select class="selectpicker"
+                                            onchange="location = this.options[this.selectedIndex].value;"
+                                            data-width="auto" data-title="Manage entries" data-style="btn-sm btn-info">
+                                        <option value="link-1.html">CSI5*</option>
+                                        <option value="link-2.html">CSI3*</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                                     data-src="/theme_fashion/static/src/img/cards_all.svg" alt="" width="198"
+                                     height="30" class="lazy"/>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-8">
+                        <ul class="additional_links">
+                            <li>
+                                <a href="#">KVKK ve Gizlilik Sözleşmesi</a>
+                            </li>
+                            <li>
+                                <a href="#">Mesafeli Satış Sözleşmesi</a>
+                            </li>
+                            <li>
+                                <span>2020 ©</span>
+                                <span t-field="res_company.name" itemprop="name">Company name</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="toTop"></div>
+        </xpath>
+    </template>
+
+    <template id="footer_poweredby_text" inherit_id="website.brand_promotion">
+        <xpath expr="//div[hasclass('o_brand_promotion')]" position="replace"></xpath>
+    </template>
+    <template id="layout_footer_copyright_ept" inherit_id="web.frontend_layout">
+        <xpath expr="//div[hasclass('o_footer_copyright')]" position="replace"></xpath>
+    </template>
+</harpiya>
